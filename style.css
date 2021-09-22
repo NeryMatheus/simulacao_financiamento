@@ -5,6 +5,12 @@
 body{
     background-color: #d7e5e6;
 }
+td{
+    padding-left: 8.5rem;
+    text-align: center;
+}
+
+
 #title{
     font-family: 'Lato', sans-serif;
     font-style: normal;
@@ -24,6 +30,12 @@ body{
     text-transform: uppercase;
     color: #0c1e25;
 }
+.p{
+    margin-bottom: 1rem;
+    font-size: 11px;
+    font-style: italic;
+}
+
 #container{
     height: 480px;
     width: auto;
@@ -36,6 +48,8 @@ body{
     box-shadow: 10px 5px 5px #264653;
     overflow: auto;
 }
+
+
 #sct1{
     display: flex;
     flex-direction: row;
@@ -52,6 +66,8 @@ body{
     margin-top: 3rem;
     height: 53px;
 }
+
+
 .lb{
     margin-left: 4rem;
     font-family: 'Lato', sans-serif;
@@ -69,6 +85,20 @@ body{
     border-color: #264653;
     border-radius: 20rem;
 }
+.result_p{
+    width: 250px;
+    height: 25px;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #0c1e25;
+    margin-left: 4rem;
+    margin-top: 2px;
+    border: 2px solid #264653;
+    border-radius: 20rem;
+    background-color: #fff;
+}
 .btn{
     height: 32px;
     width: 32px;
@@ -84,7 +114,10 @@ body{
     margin: 2px 0 2px 1rem;
     background: url("icons/488.png");
 }
+
+
 .th{
+    padding-bottom: 0.5rem;
     padding-left: 8.5rem;
     font-family: 'Lato', sans-serif;
     font-weight: 600;

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Hello World</title>
+    <title>Simulação de Financiamento</title>
 
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,65 +15,59 @@
 <body>
     
     <h1 id="title">Simulação de Financiamento</h1>
-
     <div id="container">
+        <p class="p">**Para calcular a simulação, aperta o ícone da calculadora.</p>
         <h2 class="subtitle">Informe os valores</h2>
         <div id="sct1">
-            <div class="obj">
+            <div>
                 <label for="id_valor" class="lb">Valor:</label>
                 <input type="number" name="valor" id="id_valor" value="Informe o valor" class="ipt">
             </div>
-            <div class="obj">
+            <div>
                 <label for="id_prazo" class="lb">Prazo(anos):</label>
                 <input type="number" name="prazo" id="id_prazo" value="Prazo" class="ipt">
             </div>
-            <div class="obj">
+            <div>
                 <label for="id_juros" class="lb">Juros ao ano:</label>
                 <input type="number" name="juros" id="id_juros" value="Juros ao ano" class="ipt">
             </div>
-
-            <input type="button" name="btn" class="btn" placeholder="Calcular">
-
+            <input type="button" onclick="calc()" name="btn" class="btn" placeholder="Calcular">
         </div>
+
 
         <h2 class="subtitle">Resultados</h2>
         <div id="sct2">
-            <div class="obj">
-                <label for="id_resultPrazo" class="lb">Prazo(meses)</label>
-                <input type="number" name="resultPrazo" id="id_resultPrazo" value="Prazo" class="ipt">
+            <div>
+                <p class="lb">Prazo(meses)</p>
+                <p id="id_resultPrazo" class="result_p"></p>
             </div>
-            <div class="obj">
-                <label for="id_resultJuros" class="lb">Juros ao mês:</label>
-                <input type="number" name="resultJuros" id="id_resultJuros" value="Juros" class="ipt">
+            <div>
+                <p class="lb">Juros ao mês</p>
+                <p id="id_resultJuros" class="result_p"></p>
             </div>
-            <div class="obj">
-                <label for="id_resultJurosAcumulados" class="lb">Juros acumulados:</label>
-                <input type="number" name="juros" value="resultJurosAcumulados" id="id_resultJurosAcumulados" class="ipt">
+            <div>
+                <p class="lb">Juros acumulados</p>
+                <p id="id_resultJurosAcumulados" class="result_p"></p>
             </div>
         </div>
         
         
         <div id="sct3">
-            <table>
+            <table id="tb">
                 <thead>
                     <tr>
                         <th class="th">Prestação</th>
                         <th class="th">Amortização</th>
-                        <th class="th">Juros</th>
+                        <th class="th" id="tb_Juros">Juros</th>
                         <th class="th">Total</th>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr>
-                        <td class="tb">1</td>
-                        <td class="tb">2</td>
-                        <td class="tb">3</td>
-                        <td class="tb">4</td>
-                    </tr>
+                <tbody id="tCorpo">
+
                 </tbody>
             </table>
         </div>
     </div>
-
+    <script src="calc.js"></script>
 </body>
 </html>
